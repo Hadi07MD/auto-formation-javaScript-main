@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hideOrShow</title>
+</head>
+<body>
+  
+        <div id="theDIV">
+            Hi, I'm a DIV element.
+        </div>
+        
+        <!-- A button element with class "button" that will execute "hideOrShow()" function upon clicking -->
+        <button class="button" onclick="hideOrShow()">Hide</button>
+        <button class="button" onclick="hideOrShow()">Show</button>
+
+ <script>
+            // A function that hides or shows a selected element
+            function hideOrShow() {
+            
+            // Select the element with id "theDIV"
+            var x = document.getElementById("theDIV");
+            
+            // If selected element is hidden
+            if (x.style.display === "none") {
+            
+                // Show the hidden element
+                x.style.display = "block";
+                
+                // Else if the selected element is shown
+            } else {
+            
+                // Hide the element
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
